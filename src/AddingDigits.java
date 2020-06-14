@@ -9,11 +9,9 @@ public class AddingDigits {
 
     public static int solution(int n) {
         int answer = 0;
-        String numberString = null;
-        String[] numberStringArray = null;
 
-        numberString = Integer.toString(n);
-        numberStringArray = numberString.split("" );
+        String numberString = Integer.toString(n);
+        String[] numberStringArray = numberString.split("" );
 
         for(String digit : numberStringArray){
             answer += Integer.parseInt(digit);
