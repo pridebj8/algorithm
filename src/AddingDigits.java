@@ -3,7 +3,6 @@ public class AddingDigits {
     public static void main(String[] args) {
         int number = 123;
         int answer = solution(number);
-
         System.out.println(answer);
     }
 
@@ -11,9 +10,9 @@ public class AddingDigits {
         int answer = 0;
 
         String numberString = Integer.toString(n);
-        String[] numberStringArray = numberString.split("" );
+        String[] numberStringArray = numberString.split("");
 
-        for(String digit : numberStringArray){
+        for (String digit : numberStringArray) {
             answer += Integer.parseInt(digit);
         }
 
