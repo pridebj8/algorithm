@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 /**
  * 특정한 합을 가지는 부분 연속 수열 찾기
  * 문제 : [1,2,3,2,5]로 구성된 수열이 있다. 합이 5인 부분 연속 수열의 개수를 구해보시오.
- * 정답 : 5 ([2.3], [3,2], [5])
+ * 예시 : 5 ([2.3], [3,2], [5])
  */
 public class TwoPointerExample {
 
