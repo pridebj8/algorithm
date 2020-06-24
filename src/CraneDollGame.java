@@ -21,12 +21,15 @@ public class CraneDollGame {
         int size = board.length;
 
         for(int move : moves) {
+            //배열의 시작은 0부터
             move = move - 1;
 
             for (int i = 0; i < size; i++) {
+                // 첫번째 행부터 시작한다
                 if (board[i][move] != 0) {
                     int doll = board[i][move];
 
+                    // 스택에 인형이 있고 연속된 인형이면 꺼내고 카운트를 +2, 그렇지 않으면 스택에 넣는다
                     if (!stack.isEmpty() && stack.peek() == doll) {
                         stack.pop();
                         answer += 2;
@@ -34,6 +37,7 @@ public class CraneDollGame {
                         stack.push(doll);
                     }
 
+                    //인형을 뽑았으면 0으로 마킹해주고 반복문을 탈출한다
                     board[i][move] = 0;
                     break;
                 }
